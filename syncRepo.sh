@@ -1,4 +1,5 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 syncThis(){
   src_remote=$1
@@ -24,4 +25,4 @@ while read line; do
   repoSource=${splitLine[0]}
   repoDest=${splitLine[1]}
   syncThis $repoSource $repoDest
-done < repoList.txt
+done < ${DIR}/repoList.txt
