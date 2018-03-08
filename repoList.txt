@@ -1,0 +1,4 @@
+# List of repositories to mirror
+# Format : source repository url, then space, then destination repository url
+# Example
+# url_source url_dest
